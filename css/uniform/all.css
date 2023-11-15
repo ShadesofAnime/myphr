@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+/* --- Uniformed Website Scheme --- */
+/* --- Revised 01 October 2023 --- */
+/* --- https://www.shadesofanime.website --- */
+
+/* --- Include Files Import --- */
+
+@import "alerts.css"; /* Alerts */
+@import "button.css"; /* Buttons */
+@import "card-flips.css"; /* Flipping Cards Div */
+@import "color.css"; /* Color Schemes */
+@import "extract.css"; /* W3 Extract */
+@import "tables.css"; /* Tables */
