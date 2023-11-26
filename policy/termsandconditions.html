@@ -1,25 +1,219 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <!-- META TAGS -->
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="ShadesOfAnime">
-    <meta name="description" content="Document Description">
-    <!-- Basic TAGS-->
-    <title>Document Title</title>
-    <!-- Linked Sources -->
-    <link rel="Stylesheet" type="text/css" href="" />
-    <link rel="Stylesheet" type="text/css" href="" />
-	<link rel="icon" type="image/x-icon" href="">
+    <title>Capstone Project Plan - Steven Hodges</title>
+    <link rel="stylesheet" href="css/includes/bootstrap/bootstrap.min.css">
 </head>
 <body>
- 
-<!-- Included Scripts -->
-<script src="" type="text/javascript"></script>
-<script src="" type="text/javascript"></script>
-<script src="" type="text/javascript"></script>
+    <!-- Begin Header -->
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5" id="Top">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">My Personal Health Record</h1>
+                <p class="lead fw-normal text-white-50 mb-0">Web Development Capstone Project of Steven Hodges</p>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- Begin Main Section -->
+    <main>
+        <p></p>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>About this Project</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>This project idea was developed out of a personal necessity. As an individual who has multiple chronic illnesses, I find it an extreme displeasure trying to manage my health. There is so much data that is generated on a daily basis that it is difficult to keep up with. Worse is the method in which your healthcare providers expect you to keep up with it. Record it on a paper form. Even though many providers may require the same information (e.g. blood glucose or blood pressure) they each have their own forms. Even if the possibility of a digital app is available, no two providers use the same app or share data with each other, even in the same healthcare system.</p>
+                            <p>My project aims to help bring multiple areas of chronic illnesses into one application. In doing this, I hope to simplify how a patient can manage their data. From Appointments to Prescriptions, everything will be in one application. The user will have the option to enter their information and save it. The forms are intuitive and simple to use. The application can generate reports, charts and graphs as well as simple things like calendars or contact list.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p></p>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <table class="table">
+                                <tr>
+                                    <td><h4>How to Run/Install</h4></td>
+                                    <td><a href="#" class="btn btn-primary float-end">View on GitHub</a></td>
+                                    <td><a href="#" class="btn btn-success float-end">View Live Demo</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="card-body">
+                            <h6>Live Demo</h6>
+                            <p>A version of the application can be found on my website by clicking <a href="#">here</a>. If the link fails, you can manually point your browser to https://www.shadesofanime.website/projects/capstone/.(Project is not uploaded at this time.)</p>
+                            <h6>Code Repository on GitHub</h6>
+                            <p>If you would like to download the code, it is available on GitHub <a href="#">here.</a> If the link fails, you can manually point your browser to https://insertthelinktotherespositoryhere.notareallink.</p>
+                            <h6>Installation Instructions</h6>
+                            <p>If you download the repository from GitHub to run on your own, you will need to follow these instructions.</p>
+                            <ol>
+                                <li>It is <strong>presumed</strong> that you are a user who is capable of these instructions and have a know-how of how coding and web-development works. Therefore, I will only list the necessary steps to get the project up and running. Please use the web if you need further details on how to install anything other than my code.</li>
+                                <li>You will need a webserver that is capable of serving html, php, css and js files as well as handling MySQL databases. If you are a Microsoft Windows user, two great available options are XAMP and WINAMP. Both are easy to install and setup.</li>
+                                <li>You will need to obtain the MySQL database file for this project. It is included in the repository in the <emp>assests-needed.7z</emp> file. Alternatively, you can download a copy of the database from my projects folder
+                                    <a href="#">here</a>. You will need a program like 7zip to extract the file.</li>
+                                <li>Once you have obtained a copy of the database, you will need to import the SQL file into whatever MySQL service you are using.</li>
+                                <li>In your MySQL service, you will need to create a username of "app" (case-sensitive) and that user's password of "AppUser23!" (case-sensitive). That user will need global permissions.</li>
+                                <li>After you have set up the database portion, you will need to complete the web portion. To do this, create a folder in your public html folder of your web server called "myphr". Do not name this folder anything else.</li>
+                                <li>Copy all files of the project into the above folder.</li>
+                                <li>If your web service is correctly running, and you have correctly followed these steps, you should be able to launch the "index.html" page in the root folder to begin the application.</li>
+                                <li>When you have reached the login page, you can use the "Fake Login" link to login to the site. At the time the project is due, I will not have had the capability to include an actual login system.</li>
+                            </ol>
+                            <a href="#top">Return to top of page.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p></p>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>The Basics</h4>
+                        </div>
+                        <div class="card-body">
+                            <h6>Visual Appeal/Responsive Design</h6>
+                            <ul>
+                                <li>The website is coded using HTML 5, CSS 3 and JavaScript.</li>
+                                <li>The backend pages that are necessary to connect to the database (forms, CRUD) utilize bootstrap 5.3.1.</li>
+                                <li>The website is scalable for desktop, mobile and tablet.</li>
+                                <li>The "Dashboard Portal", which is the main feature of the website, is presented in an "Admin Panel" format and kept uniform between each type of portal.</li>
+                                <li>Font-Awesome 6 icons are used for the majority of imagery, rather than images to improve load time.</li>
+                                <li>The website is mostly coded to accessibility standards.</li>
+                            </ul>
+                            <h6>GitHub</h6>
+                            <ul>
+                                <li>The project exceeds the minimum number of five commits to the GitHub repository.</li>
+                                <li>The readme.md file incorporates the majority of this plan and meets the requirements set forth in the
+                                    <a href="https://docs.google.com/document/d/193MenMIY9NX-SHazZAIvtTb62gOg-nKBj4m74bH__7U/edit#heading=h.itlhol9ki1d3">Capstone Project Guidelines</a> document uploaded to Google Classroom.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p></p>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Required Features</h4>
+                        </div>
+                        <div class="card-body">
+                            <h6>Feature #1</h6>
+                            <ul>
+                                <li><strong>"Use a regular expression to validate user input and either prevent the invalid input or inform the user about it. (In all cases prevent invalid input from being stored or saved.)</strong></li>
+                                <li>This feature is repeated several times throughout the website.</li>
+                                <li>It is present in user forms in the form of
+                                    <ul>
+                                        <li>The reformatting of user input for telephone numbers, where the script formats the telephone number to the uniform specifications for the database;</li>
+                                        <li>The verification script for the input of the "SSN" will check that the user has entered a four-digit number and that both fields match.</li>
+                                        <li>If either of these tests fail, an alert to the user is made of what they must do in order to correct the mistake.</li>
+                                    </ul>
+                                </li>
+                                <li>It is finally present for external links. The user will be alerted that they have clicked on an external link. If they chose to continue, they will be redirected away from the website. If they cancel, they will stay on the website.</li>
+                            </ul>
+                            <p><a href="#top">Return to top of page.</a></p>
+                            <h6>Feature #2</h6>
+                            <ul>
+                                <li><strong>Retrieve data from a third-party API and use it to display something within your app.</strong></li>
+                                <li>The website contains a feature where the user can input their drug/medication name to query the official FDA database.</li>
+                                <li>The user is provided with information on their drug/medication from that API.</li>
+                            </ul>
+                            <p><a href="#top">Return to top of page.</a></p>
+                            <h6>Feature #3</h6>
+                            <ul>
+                                <li><strong>Create a function that accepts two or more input parameters and returns a value that is calculated or determined by the inputs.  Basic math functions don’t count (e.g. addition, etc).</strong></li>
+                                <li>This occurs in several forms.</li>
+                                <li>To format data that will be used throughout the website, I wrote a script that calculates the displayed name.</li>
+                                <li>When the user is adding their healthcare provider they will enter the "First Name", "Middle Name", "Last Name" and the "Degree" of their provider.</li>
+                                <li>The function then reorganizes that data into "Last Name", "First Name", "Middle Name", and "Degree".</li>
+                                <li>For example, when the user adds John Doe Smith with the degree of M.D., the script reorganizes it into "Smith, John Doe M.D."</li>
+                                <li>The script is coded to inject that formatted name into the 'dname' field and store it upon submission.</li>
+                                <li>This also happens for the patient name as well.</li>
+                            </ul>
+                            <p><a href="#top">Return to top of page.</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Extra Features</h4>
+                        </div>
+                        <div class="card-body">
+                            <h6>Extra Feature #1</h6>
+                            <ul>
+                                <li><strong>Use arrays, objects, sets or maps to store and retrieve information that is displayed in your app.</strong></li>
+                                <li>This feature is implemented in forms.</li>
+                                <li>For forms that contain multi-parts, the function stores to the "local storage" and retrieves from "local storage" the data that has been saved.</li>
+                                <li>Since uniformity of the data is an important aspect of the website, using data saved to the "local storage" ensures that the user cannot create additional sets of data that are repetitive. </li>
+                            </ul>
+                            <h6>Extra Feature #2</h6>
+                            <ul>
+                                <li><strong>Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event).</strong></li>
+                                <li>When creating a new patient, it is necessary to establish a number specific to that patient. This number, the Medical Record Number (MRN) will be used to identify the patient across the website as well as associate their information to their account.</li>
+                                <li>The function to establish this number combines externally called data (the Year) and data unique to the patient (Name, Birthdate, SSN).</li>
+                                <li>Once the patient's "Last Name," "Birthdate," and "SSN" are entered, the function calls for the current year, the "SSN," the first letter of the "Last Name," and the Birthdate (stripped of any additional characters).</li>
+                                <li>That number is then assembled into the following format YYYY-SSN-L-Birthdate.</li>
+                                <li>For example, patient John Doe Smith, with the SSN of 1234 and the birthdate of 01/01/1995 and entered this month, would have a MRN of "2023-1234-S-19950101"</li>
+                            </ul>
+                            <h6>Extra Feature #3</h6>
+                            <ul>
+                                <li><strong>Interact with a database to store and retrieve information (e.g. MySQL, MongoDB, etc).</strong></li>
+                                <li>The backend of the project connects to a MySQL database that utilizes PHP 8.1 for connectivity.</li>
+                                <li>All form data is stored to the database and retrieved when called upon.</li>
+                                <li>Basic CRUD operations exist for most areas.</li>
+                                <li>Options that can be used across the website (i.e. gender, race, provider, organization,etc.) are stored in the database. A PHP script calls them and formats them into a HTML '&lt;select&gt;' tag, with the appropriate options.</li>
+                                <li>This again stresses the use of uniformed data.</li>
+                            </ul>
+                            <h6>Extra Feature #4</h6>
+                            <ul>
+                                <li><strong>Implement modern interactive UI features (e.g. table/data sorting, autocomplete, drag-and-drop, calendar-date-picker, etc).</strong></li>
+                                <li>The website uses many different interactive UI features, such as data sorting, autocomplete and calendar-date-picker.</li>
+                                <li>The majority of these features are incorporated into forms.</li>
+                                <li style="opacity: 0; line-height: 0.25em">Spacer</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p></p>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Not all portals lead somewhere...</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>In the limited amount of time, with the limited amount of skill that I possess, I have done my best to ensure that major portions of the website were completed. I wanted to show the layout, with all of its possibilities. However, not all portals will have full function. I know this is an ambitious project. This is the version I could complete to submit for credit. It has the features required and gives the impression of what everything is.</p>
+                            <p>I have a separate version that I am working on, which will end up as my personal use version. It will be hosted on my other-other website, myphr.quest. In this version, I use more frameworks such as Bootstrap for design and UserSpice for PHP Framework and user management. I intend to complete this project to what I believe would be a useful version and offer it opensource. Until then, thanks for your time.</p>
+                            <p><a href="#top">Return to top of page.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p></p>
+        </div>
+    </main>
+    <!-- Begin Main Section -->
+    <!-- Begin Footer-->
+    <footer class="py-5 bg-dark">
+        <p></p>
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; 2023. ShadesOfAnime. All rights reserved.</p>
+            <p class="m-0 text-center text-white">ShadesOfAnime and MyPHR.Quest are brands of ShadesOfAnime. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- End Footer-->
+    <script src="js/includes/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>
