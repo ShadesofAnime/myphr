@@ -1,17 +1,17 @@
-import { MY_API_KEY } from './config.js';
 let covid19data;
 
 (function onLoad()
 {
-    // set a function for each button
+    // set the function button
     setButtonFunctions();
 
-    // fetch from each API when the page loads
+    // Fetch Data from API upon page refresh
     getLatestCOVID19Data();
 })();
 
 function setButtonFunctions()
 {
+
     document.getElementById('countries').onchange = function() {
         const selectedValue = document.getElementById('countries').value;
         const countryData = covid19data.filter(c => c.country == selectedValue)[0];
@@ -33,14 +33,14 @@ function setButtonFunctions()
 
 
 
-// COVID 19 Data
+// COVID-19 DATA
 async function getLatestCOVID19Data()
 {
     await fetch("https://covid-193.p.rapidapi.com/statistics", {
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "covid-193.p.rapidapi.com",
-            "x-rapidapi-key": MY_API_KEY
+            "x-rapidapi-key": "bc4fef14d2mshae21da6d3b08e37p1ac206jsn6850d0e9b28a"
         }
     })
         .then(response => response.json())
@@ -56,7 +56,7 @@ async function getLatestCOVID19Data()
                 document.getElementById('countries').appendChild(option);
             })
 
-            // save covid data to global variable
+            // Save the COVID-19 data to global variable
             covid19data = response.response;
         })
         .catch(err => {
