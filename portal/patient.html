@@ -9,7 +9,7 @@
     <meta name="author" content="ShadesOfAnime">
     <meta name="description" content="Dashboard Home is the central location of the applications of the website My Health Data.">
     <!-- Basic TAGS-->
-    <title>Dashboard Portal Home - My PHR</title>
+    <title>Patient Portal - My PHR</title>
     <!-- Linked Sources -->
     <link rel="Stylesheet" type="text/css" href="../css/includes/font-awesome/all.min.css" />
     <link rel="Stylesheet" type="text/css" href="../css/portal.css" />
@@ -33,7 +33,7 @@
             <a aria-label="Check Messages" class="portal-bar-item portal-button" href="#" title="Messages"><i class="fa fa-envelope"></i></a>
             <a aria-label="My Account" class="portal-bar-item portal-button" href="#" title="My Account"><i class="fa fa-user"></i></a>
             <a aria-label="Settings" class="portal-bar-item portal-button" href="#" title="Settings"><i class="fa fa-cog"></i></a>
-            <a aria-label="MyChart External Link" class="portal-bar-item portal-button" href="https://mychart.uoflhealth.org/MyChart/Authentication/Login?" title="MyChart (External)"><i class="fa-solid fa-laptop-medical" style="color: rgb(255, 0, 0);"></i></a>
+            <a aria-label="MyChart External Link" class="portal-bar-item portal-button" href="https://mychart.uoflhealth.org/MyChart/Authentication/Login?"title="MyChart (External)"><i class="fa-solid fa-laptop-medical" style="color: rgb(255, 0, 0);"></i></a>
             <a aria-label="Logout" class="portal-bar-item portal-button" href="#" title="Logout"><i class="fa-solid fa-sign-out"></i></a>
             <a aria-label="Manage Database" class="portal-bar-item portal-button" href="#" title="Manage Database"><i class="fas fa-database"></i></a>
         </div>
@@ -45,7 +45,7 @@
     <div class="portal-bar-block">
         <a aria-label="Close Menu" class="portal-bar-item portal-button portal-padding-16 portal-hide-large scheme-dark-grey scheme-hover-black" href="#"  onclick="portal_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
 
-        <a aria-label="Dashboard Home" class="portal-bar-item portal-button portal-padding scheme-blue" href="index.html" title="Dashboard Home">
+        <a aria-label="Dashboard Home" class="portal-bar-item portal-button portal-padding" href="index.html" title="Dashboard Home">
             <i aria-hidden="true" class="fa-solid fa-gauge" title="Dashboard Home" ></i>&nbsp;
             <span>Dashboard Home</span>
         </a>
@@ -69,8 +69,8 @@
             <i class="fa-solid fa-vial " title="Diabetic Portal"></i>&nbsp;
             <span>Diabetic Portal</span>
         </a>
-        <a aria-label="Document Portal" class="portal-bar-item portal-button portal-padding" href="documents.html" title="Document Portal">
-            <i aria-hidden="true" class="fa-solid fa-folder" title="Document Portal"></i>&nbsp;
+        <a aria-label="Form Portal" class="portal-bar-item portal-button portal-padding" href="documents.html" title="Document Portal">
+            <i aria-hidden="true" class="fa-solid fa-folder" title="Form Portal"></i>&nbsp;
             <span>Document Portal</span>
         </a>
         <a aria-label="Form Portal" class="portal-bar-item portal-button portal-padding" href="forms.html" title="Form Portal">
@@ -81,7 +81,7 @@
             <i aria-hidden="true" class="fa-solid fa-heart-circle-xmark" title="Heart Failure Portal"></i>&nbsp;
             <span>Heart Failure Portal</span>
         </a>
-        <a aria-label="Patient Portal" class="portal-bar-item portal-button portal-padding" href="patient.html" title="Patient Portal">
+        <a aria-label="Patient Portal" class="portal-bar-item portal-button portal-padding scheme-blue" href="patient.html" title="Patient Portal">
             <i aria-hidden="true" class="fa-solid fa-hospital-user" title="Patient Portal"></i>&nbsp;
             <span>Patient Portal</span>
         </a>
@@ -121,7 +121,7 @@
 
     <!-- Begin Header -->
     <header class="portal-container" style="padding-top:22px">
-        <h3><b><i class="fa fa-dashboard"></i> My Dashboard</b></h3>
+        <h3><b><i class="fa fa-dashboard"></i> Patient Portal</b></h3>
     </header>
 
     <!-- Begin Header Cards -->
@@ -168,119 +168,51 @@
         </div>
     </div>
     <!-- End Header Cards -->
-    <div class="alert-danger">
+    <div class="alert-primary">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-        Several features or function of this website are still under development, but are included as placeholders so that the overall aspect of the website can be envisioned. If you explore a feature that is still under development, you will be taken to a description of what that feature's role is so that you can better understand it's purpose.
+        The Patient Portal is the central hub for information about the user/patient. The information stored through this portal can be utilized across all portals (i.e. Insurance Information used in the Billing Portal).
     </div>
     <!-- End Header -->
 
     <div class="portal-panel">
         <div class="portal-row-padding" style="margin:0 -16px">
-            <div class="portal-third">
-                <h4>Health Updates</h4>
-                <img src="../img/bg/A001.png" style="width:100%" alt="none">
-            </div>
-            <div class="portal-twothird">
-                <h4>Updated Vitals</h4>
+                <h4>Portal Functions</h4>
                 <table class="portal-table portal-striped scheme-white">
                     <tr>
-                        <td><i class="fa-solid fa-fire-flame-simple scheme-text-red portal-large"></i></td>
-                        <td>Blood Glucose</td>
-                        <td><i>120 mg/dl</i></td>
-                        <td>12/01/2023 18:00:00</td>
+                        <td>Baic Information</td>
+                        <td>Patient Demographics</td>
+                        <td>Basic Medical Information</td>
+                        <td>Contact Information</td>
                     </tr>
                     <tr>
-                        <td><i class="fa-solid fa-file-waveform scheme-text-blue portal-large"></i></td>
-                        <td>Blood Pressure</td>
-                        <td><i>120/80 mmHg</i></td>
-                        <td>12/01/2023 18:00:00</td>
+                        <td>Organizations</td>
+                        <td>Pharmacies</td>
+                        <td>Providers</td>
+                        <td>Advanced Planning</td>
                     </tr>
                     <tr>
-                        <td><i class="fa-solid fa-heart-circle-bolt scheme-text-red portal-large"></i></td>
-                        <td>Heart Rate</td>
-                        <td><i>XX XX</i></td>
-                        <td>12/01/2023 18:00:00</td>
+                        <td>Manage MRNs</td>
+                        <td>Manage Records</td>
+                        <td>Message Providers</td>
+                        <td>External Links</td>
                     </tr>
                     <tr>
-                        <td><i class="fa-solid fa-mask-ventilator scheme-text-yellow portal-large"></i></td>
-                        <td>Respiratory Rate</td>
-                        <td><i>XX XX</i></td>
-                        <td>12/01/2023 18:00:00</td>
+                        <td>Health Information</td>
+                        <td>Diagnosed Conditions</td>
+                        <td>Treatment Goals & Plan</td>
+                        <td>Family History</td>
                     </tr>
                     <tr>
-                        <td><i class="fa-solid fa-arrows-up-to-line scheme-text-yellow portal-large"></i></td>
-                        <td>SP02</td>
-                        <td><i>100%</i></td>
-                        <td>12/01/2023 18:00:00</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-thermometer scheme-text-purple portal-large"></i></td>
-                        <td>Temperature</td>
-                        <td><i>98.6&deg;</i></td>
-                        <td>12/01/2023 18:00:00</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa-solid fa-weight-scale scheme-text-blue-gray portal-large"></i></td>
-                        <td>Weight</td>
-                        <td><i>180 lbs.</i></td>
-                        <td>12/01/2023 18:00:00</td>
+                        <td>Research Studies & Trials</td>
+                        <td>Treatment Manual</td>
+                        <td>Medical Records</td>
+                        <td>Journal</td>
                     </tr>
                 </table>
-            </div>
+
         </div>
     </div>
     <hr>
-
-    <div class="portal-container">
-        <h5>Care Team</h5>
-        <table class="portal-table portal-striped portal-bordered portal-border portal-hoverable scheme-white">
-            <tr>
-                <td>Dr. Jane Doe</td>
-                <td>Primary Care Provider</td>
-            </tr>
-            <tr>
-                <td>Dr. John Doe</td>
-                <td>Cardiologist</td>
-            </tr>
-            <tr>
-                <td>Dr. John Smith</td>
-                <td>Pulmonologist</td>
-            </tr>
-            <tr>
-                <td>Dr. Jane Smith</td>
-                <td>Endocrinologist</td>
-            </tr>
-            <tr>
-                <td>Dr. John Jones</td>
-                <td>Psychiatrist</td>
-            </tr>
-            <tr>
-                <td>Jane Jones, NP</td>
-                <td>Case Manager</td>
-            </tr>
-        </table><br>
-        <a class="#" href="#"><button class="portal-button scheme-dark-grey">More Providers <i class="fa fa-arrow-right"></i></button></a>
-    </div>
-    <hr>
-    <div class="portal-container">
-        <h5>Recent After Visits</h5>
-        <ul class="portal-ul portal-card-4 scheme-white">
-            <li class="portal-padding-16">
-                <i class="fa-solid fa-user-doctor portal-xlarge"></i>
-                <span class="portal-xlarge">Dr. Doe</span><br>
-            </li>
-            <li class="portal-padding-16">
-                <i class="fa-solid fa-user-doctor portal-xlarge"></i>
-                <span class="portal-xlarge">Dr. Smith</span><br>
-            </li>
-            <li class="portal-padding-16">
-                <i class="fa-solid fa-user-doctor portal-xlarge"></i>
-                <span class="portal-xlarge">Dr. Phil</span><br>
-            </li>
-        </ul>
-    </div>
-    <hr>
-
     <!-- Footer -->
     <footer class="portal-container portal-padding-16 portal-light-grey">
         <p>&copy; 2023 ShadesOfAnime. All rights reserved.</p>
