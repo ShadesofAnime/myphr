@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+/* --- My PHR User General Error Page Style --- */
+/* --- Revised 14 November 2023 --- */
+/* --- https://www.shadesofanime.website --- */
+
+.error {
+    color: rgb(255, 0, 0);
+    display: none;
+}

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us - My PHR</title>
+    <link rel="stylesheet" href="css/includes/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/error.css">
+
+</head>
+<body>
+    <!-- Begin Header -->
+    <header class="bg-dark py-3">
+        <div class="container px-4 px-lg-4 my-5" id="Top">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">Contact Form</h1>
+                All feedback about the website is welcome.
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- Begin Main Section -->
+    <main>
+        <p></p>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card bg-dark">
+                        <div class="card-header bg-primary text-white">
+                            <h4>Contact Us</h4>
+                            Fields that contain <i style="color: rgb(255, 0, 0)">*</i> are required.
+                        </div>
+                        <div class="card-body text-white">
+                            <form action="contact.php" autocomplete="on" method="post" id="MyForm">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label for="name">Your Name <i style="color: rgb(255, 0, 0)">*</i></label>
+                                        <input type="text" class="form-control" id="name" name="name" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="email">Your Email Address <i style="color: rgb(255, 0, 0)">*</i></label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div>
+                                    <div class="col">
+                                        <label for="confirm_email">Please Confirm Your Email Address</label>
+                                        <input type="email" class="form-control" id="confirm_email" name="confirm_email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label for="subject">What do you want to discuss? <i style="color: rgb(255, 0, 0)">*</i></label>
+                                        <select name="subject" id="subject" class="form-select" required>
+                                            <option value="about">About the Website</option>
+                                            <option value="bug">Broken Link/Bug/Glitch</option>
+                                            <option value="feature_request">Feature Request</option>
+                                            <option value="account">My Account</option>
+                                            <option value="policy">Policy Question</option>
+                                            <option value="security">Security</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label for="message">Your Message <i style="color: rgb(255, 0, 0)">*</i></label>
+                                        <textarea name="message" id="message" cols="30" rows="10" class="form-control" required></textarea>
+                                    </div>
+                                </div>
+                                <p></p>
+                                <div class="row">
+                                    <div class="col" style="text-align: center;">
+                                        <button class="btn btn-warning" id="reset" type="reset">Clear Form</button>
+                                        <button class="btn btn-primary" id="send_msg" name="send_msg" onclick="validateForm()" type="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p></p>
+    </main>
+    <!-- Begin Main Section -->
+    <!-- Begin Footer-->
+    <footer class="py-5 bg-dark">
+        <p></p>
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; 2023. ShadesOfAnime. All rights reserved.</p>
+            <p class="m-0 text-center text-white">ShadesOfAnime and MyPHR.Quest are brands of ShadesOfAnime. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- End Footer-->
+    <script src="js/includes/bootstrap/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="js/forms/contact-validate.js" type="text/javascript"></script>
+    <script src="js/links/external-link.js" type="text/javascript"></script>
+</body>
+</html>
